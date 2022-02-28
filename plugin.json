@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/midi-mixer-plugin/plugin.schema.json",
   "id": "ca.jaggernaut.midi-mixer.PTT",
-  "name": "Push To Talk",
+  "name": "Push-To-Talk",
   "type": "node",
   "version": "1.0.0",
   "author": "Jaggernaut",

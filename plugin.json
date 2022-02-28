@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/midi-mixer-plugin/plugin.schema.json",
+  "id": "ca.jaggernaut.midi-mixer.PTT",
+  "name": "Push To Talk",
+  "type": "node",
+  "version": "1.0.0",
+  "author": "Jaggernaut",
+  "main": "lib/index.js",
+  "settings": {
+    "keycode": {
+      "label": "Keycode list. Re-activate plugin to update",
+      "type": "text",
+      "fallback": "17(ctrl)"
+    }
+  }
+}

@@ -22,6 +22,5 @@ Each combination is separated by a comma (`,`) and will create buttons for "key 
 
 This package uses:
 - [midi-mixer-plugin](https://github.com/midi-mixer/midi-mixer-plugin)
-- [ffi-napi](hhttps://github.com/node-ffi-napi/node-ffi-napi)
-- [keycode](https://github.com/timoxley/keycode)
+- [ffi-napi](https://github.com/node-ffi-napi/node-ffi-napi)
 - [ref-array-napi](https://github.com/Janealter/ref-array-napi#readme)

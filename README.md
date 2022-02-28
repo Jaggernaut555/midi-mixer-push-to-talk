@@ -14,11 +14,11 @@ Each combination is separated by a comma (`,`) and will create buttons for "key 
 
 ### Explanation of example setting
 
-`65` creates a buttons that will press the `a` key. They will show up as `65 key down`, `65 key up`, and `65 key tap`.
+`65` creates buttons that will press the `a` key. They will show up as `65 key down`, `65 key up`, and `65 key tap`.
 
-`124(F13)` creates a button that will press the `F13`. The `(F13)` means the button will show up as `F13 key down`, `F13 key up`, and `F13 key tap`.
+`124(F13)` creates buttons that will press the `F13`. The `(F13)` means the button will show up as `F13 key down`, `F13 key up`, and `F13 key tap`.
 
-`17+90(undo)` creates a button that will press the `ctrl` and `z` keys. The `(undo)` means the button will show up as `undo key down`, `undo key up`, and `undo key tap`
+`17+90(undo)` creates buttons that will press the `ctrl` and `z` keys. The `(undo)` means the button will show up as `undo key down`, `undo key up`, and `undo key tap`
 
 This package uses:
 - [midi-mixer-plugin](https://github.com/midi-mixer/midi-mixer-plugin)

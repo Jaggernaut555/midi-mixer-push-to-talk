@@ -1,6 +1,6 @@
 {
   "name": "ca.jaggernaut.midi-mixer.PTT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "A Push-To-Talk plugin for MIDI Mixer.",
   "files": [

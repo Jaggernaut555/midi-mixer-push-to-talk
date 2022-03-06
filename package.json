@@ -28,20 +28,22 @@
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "midi-mixer-cli": "^1.0.4",
+    "midi-mixer-cli": "^1.0.5",
     "prettier": "^2.2.1",
     "semantic-release": "^17.4.3",
     "typescript": "^4.1.3"
   },
   "dependencies": {
     "ffi-napi": "^4.0.3",
+    "keycode": "^2.2.1",
     "midi-mixer-plugin": "^1.0.2",
     "ref-array-napi": "^1.2.2"
   },
   "bundledDependencies": [
     "midi-mixer-plugin",
     "ffi-napi",
-    "ref-array-napi"
+    "ref-array-napi",
+    "keycode"
   ],
   "repository": {
     "type": "git",

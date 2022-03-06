@@ -4,6 +4,7 @@ import os from "os";
 import import_Struct from "ref-struct-di";
 import StructType from "ref-struct-di";
 import ArrayType from 'ref-array-napi';
+import keycode from 'keycode';
 
 var arch = os.arch();
 const Struct = import_Struct(ref);
@@ -56,15 +57,17 @@ export function KeyToggle(keyCode: number, type = "down" as "down" | "up", optio
     // scan-code approach (default)
     if (opt.asScanCode) {
         let scanCode = opt.keyCodeIsScanCode ? keyCode : ConvertKeyCodeToScanCode(keyCode);
-        let isExtendedKey = (scanCode & extendedKeyPrefix) == extendedKeyPrefix;
+        // let isExtendedKey = (scanCode & extendedKeyPrefix) == extendedKeyPrefix;
+        let isExtended = isExtendedKey(keyCode);
 
         entry.dwFlags = KEYEVENTF_SCANCODE;
-        if (isExtendedKey) {
+        if (isExtended) {
             entry.dwFlags |= KEYEVENTF_EXTENDEDKEY;
         }
 
         entry.wVK = 0;
-        entry.wScan = isExtendedKey ? scanCode - extendedKeyPrefix : scanCode;
+        // entry.wScan = isExtended ? scanCode - extendedKeyPrefix : scanCode;
+        entry.wScan = scanCode;
     }
     // (virtual) key-code approach
     else {
@@ -91,6 +94,12 @@ export function KeyToggle(keyCode: number, type = "down" as "down" | "up", optio
     return user32.SendInput(1, entry, arch === "x64" ? 40 : 28);
 }
 
-export function ConvertKeyCodeToScanCode(keyCode: number) {
+function ConvertKeyCodeToScanCode(keyCode: number) {
     return user32.MapVirtualKeyExA(keyCode, 0, 0);
+}
+
+const EXTENDED_KEYS = [keycode.codes.up, keycode.codes.down, keycode.codes.left, keycode.codes.right, keycode.codes.home, keycode.codes.end, keycode.codes.insert, keycode.codes.delete, keycode.codes["page up"], keycode.codes["page down"]]
+
+function isExtendedKey(keycode: number) {
+    return EXTENDED_KEYS.includes(keycode);
 }

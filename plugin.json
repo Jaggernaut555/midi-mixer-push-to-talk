@@ -11,6 +11,11 @@
       "label": "Keycode list. Re-activate plugin to update",
       "type": "text",
       "fallback": "17(ctrl)"
+    },
+    "wheelkeycodes": {
+      "label": "Wheel keycode list. Re-activate plugin to update",
+      "type": "text",
+      "fallback": "37(left)/39(right)"
     }
   }
 }

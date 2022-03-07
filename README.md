@@ -20,7 +20,7 @@ You can also create "wheels". These should only be used on infinite rotary encod
 
 This creates a wheel that presses the left arrow key on volume down and the right arrow on volume up. On pressing the `assign` button it will toggle to pressing the down arrow on volume down and up arrow on volume up.
 
-A wheel requires a volume up and down argument separated by a forward slash `/`. Each side of the divider follows the same rules as regular key codes described above. By pressing the `assign` button of a group you can toggle between up to two sets of keycodes for volume up and down. You can add another keycode in square brackets to either or both sides of the divider to specify the alternate keycodes (e.g. `~37(left)[~40(down)]/~39(right)[~38(up)]` will let you toggle between left/right arrow keys and down/up arrow keys). The names specified for each code will be what shows in the dropdown menu. (e.g. `Wheel left/right (down/up)`). A detailed example can be found below.
+A wheel requires a volume up and down argument separated by a forward slash `/`. Each side of the divider follows the same rules as regular key codes described above. By pressing the `assign` button of a group you can toggle between up to two sets of keycodes for volume up and down. You can add another keycode in square brackets to either or both sides of the divider to specify the alternate keycodes (e.g. the `[~40(down)]` and `[~38(up)]` in the example). The names specified for each code will be what shows in the dropdown menu. (e.g. `Wheel left/right (down/up)`). A detailed example can be found below.
 
 ### Explanation of example setting
 

@@ -26,10 +26,10 @@ A wheel requires a volume up and down argument separated by a forward slash `/`.
 
 `65` creates buttons that will press the `a` key. They will show up as `65 key down`, `65 key up`, and `65 key tap`.
 
-`124(F13)` creates buttons that will press the `F13`. The `(F13)` means the button will show up as `F13 key down`, `F13 key up`, and `F13 key tap`.
+`124(F13)` creates buttons that will press the `F13` key. The `(F13)` means the button will show up as `F13 key down`, `F13 key up`, and `F13 key tap`.
 
 `17+90(undo)` creates buttons that will press the `ctrl` and `z` keys. The `(undo)` means the button will show up as `undo key down`, `undo key up`, and `undo key tap`
 
-`16+~37(ctrl+left)[~37*3(left*3)]/16+~39(ctrl+right)[~39*3(right*3)]` creates a wheel that will press ctrl (`16`) and left (`~37`) when volume is turned down and ctrl (`16`) and right (`~39`) when volume is turned up. When `assign` is toggled the alternate codes sent will be left (`~37`) three times (`*3`) and right (`~39`) three times (`*3`). The name of this wheel will show up as `Wheel ctrl+left/ctrl+right (left*3/right*3)`.
+`17+~37(ctrl+left)[~37*3(left*3)]/17+~39(ctrl+right)[~39*3(right*3)]` creates a wheel that will press ctrl (`17`) and left (`~37`) when volume is turned down and ctrl (`17`) and right (`~39`) when volume is turned up. When `assign` is toggled the alternate codes sent will be left (`~37`) three times (`*3`) and right (`~39`) three times (`*3`). The name of this wheel will show up as `Wheel ctrl+left/ctrl+right (left*3/right*3)`.
 
 Latest releases of this plugin available [on the project's github page](https://github.com/Jaggernaut555/midi-mixer-push-to-talk/releases/latest)

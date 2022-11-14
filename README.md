@@ -14,7 +14,7 @@ Each combination is separated by a comma (`,`) and will create buttons for "key 
 
 ## Wheels
 
-![Wheel demonstration](wheels-demo)
+![Wheel demonstration][wheels-demo]
 
 You can also create "wheels". These should only be used on infinite rotary encoders as behaviour on faders or limited rotation encoders will not be useful. The following is an example of a wheel code. You can create multiple wheels separated by commas.
 

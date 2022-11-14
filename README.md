@@ -14,6 +14,8 @@ Each combination is separated by a comma (`,`) and will create buttons for "key 
 
 ## Wheels
 
+![Wheel demonstration](wheels-demo)
+
 You can also create "wheels". These should only be used on infinite rotary encoders as behaviour on faders or limited rotation encoders will not be useful. The following is an example of a wheel code. You can create multiple wheels separated by commas.
 
 ```~37(left)[~40(down)]/~39(right)[~38(up)]```
@@ -37,3 +39,5 @@ This package uses:
 - [ffi-napi](https://github.com/node-ffi-napi/node-ffi-napi)
 - [ref-array-napi](https://github.com/Janealter/ref-array-napi#readme)
 - [keycode](https://github.com/timoxley/keycode)
+
+[wheels-demo]: https://raw.githubusercontent.com/Jaggernaut555/midi-mixer-push-to-talk/main/images/wheels-demo.gif

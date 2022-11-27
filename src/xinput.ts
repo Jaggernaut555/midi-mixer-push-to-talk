@@ -125,30 +125,29 @@ function createAxisInput(axis: InputAxis<X360Controller>, nameOverride: string =
     }
 
     // non-triggers need to go -1 to 1
-    if (isTrigger == false) {
+    if (isTrigger == true) {
         ax.axisAssignment.on("volumeChanged", (level: number) => {
-            //convert level from 0-1 to -1 to 1
-            let val = (level * 2) - 1;
-            ax.xinputAxis.setValue(val);
+            ax.xinputAxis.setValue(level);
             ax.axisAssignment.volume = level;
         })
-    
+
         ax.axisAssignment.on("assignPressed", () => {
             // reset to centre
-            ax.axisAssignment.volume = 0.5;
+            ax.axisAssignment.volume = 0;
             ax.xinputAxis.reset();
         })
     }
     else {
         ax.axisAssignment.on("volumeChanged", (level: number) => {
             //convert level from 0-1 to -1 to 1
-            ax.xinputAxis.setValue(level);
+            let val = (level * 2) - 1;
+            ax.xinputAxis.setValue(val);
             ax.axisAssignment.volume = level;
         })
-    
+
         ax.axisAssignment.on("assignPressed", () => {
             // reset to centre
-            ax.axisAssignment.volume = 0;
+            ax.axisAssignment.volume = 0.5;
             ax.xinputAxis.reset();
         })
     }
@@ -157,7 +156,7 @@ function createAxisInput(axis: InputAxis<X360Controller>, nameOverride: string =
 }
 
 // Dpad is an axis but we can treat it like buttons
-function createDpadInput(axis: InputAxis<X360Controller>, posName: string, negName: string ) {
+function createDpadInput(axis: InputAxis<X360Controller>, posName: string, negName: string) {
 
     let butt: XinputDpad = {
         xinputAxis: axis,

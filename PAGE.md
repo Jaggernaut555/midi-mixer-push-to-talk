@@ -32,4 +32,9 @@ A wheel requires a volume up and down argument separated by a forward slash `/`.
 
 `17+~37(ctrl+left)[~37*3(left*3)]/17+~39(ctrl+right)[~39*3(right*3)]` creates a wheel that will press ctrl (`17`) and left (`~37`) when volume is turned down and ctrl (`17`) and right (`~39`) when volume is turned up. When `assign` is toggled the alternate codes sent will be left (`~37`) three times (`*3`) and right (`~39`) three times (`*3`). The name of this wheel will show up as `Wheel ctrl+left/ctrl+right (left*3/right*3)`.
 
+## Xinput
+
+To enable xinput support install the [ViGEmBus Driver](https://github.com/ViGEm/ViGEmBus/releases/tag/v1.21.442.0).
+When controlling the joysticks or triggers via an assigned fader/encoder you can press the `assign` button of the group to reset the joystick X or Y axis back to centre or the trigger back to 0/unpressed.
+
 Latest releases of this plugin available [on the project's github page](https://github.com/Jaggernaut555/midi-mixer-push-to-talk/releases/latest)

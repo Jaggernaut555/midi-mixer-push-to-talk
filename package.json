@@ -37,13 +37,15 @@
     "ffi-napi": "^4.0.3",
     "keycode": "^2.2.1",
     "midi-mixer-plugin": "^1.0.2",
-    "ref-array-napi": "^1.2.2"
+    "ref-array-napi": "^1.2.2",
+    "vigemclient": "^1.4.1"
   },
   "bundledDependencies": [
     "midi-mixer-plugin",
     "ffi-napi",
     "ref-array-napi",
-    "keycode"
+    "keycode",
+    "vigemclient"
   ],
   "repository": {
     "type": "git",

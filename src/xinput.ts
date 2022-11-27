@@ -55,6 +55,7 @@ export function initXinput() {
 
     createButtonInput(controller.button.BACK);
     createButtonInput(controller.button.GUIDE);
+    createButtonInput(controller.button.START);
     createButtonInput(controller.button.LEFT_SHOULDER);
     createButtonInput(controller.button.LEFT_THUMB, "L3");
     createButtonInput(controller.button.RIGHT_SHOULDER);
@@ -161,27 +162,27 @@ function createDpadInput(axis: InputAxis<X360Controller>, posName: string, negNa
     let butt: XinputDpad = {
         xinputAxis: axis,
         pushPosButton: new ButtonType(`Push${posName}ButtonXinput`, {
-            name: `${posName} Dpad press`,
+            name: `Dpad ${posName} press`,
             active: true,
         }),
         releasePosButton: new ButtonType(`Release${posName}ButtonXinput`, {
-            name: `${posName} Dpad release`,
+            name: `Dpad ${posName} release`,
             active: true,
         }),
         tapPosButton: new ButtonType(`Tap${posName}ButtonXinput`, {
-            name: `${posName} Dpad tap`,
+            name: `Dpad ${posName} tap`,
             active: true,
         }),
         pushNegButton: new ButtonType(`Push${negName}ButtonXinput`, {
-            name: `${negName} Dpad press`,
+            name: `Dpad ${negName} press`,
             active: true,
         }),
         releaseNegButton: new ButtonType(`Release${negName}ButtonXinput`, {
-            name: `${negName} Dpad release`,
+            name: `Dpad ${negName} release`,
             active: true,
         }),
         tapNegButton: new ButtonType(`Tap${negName}ButtonXinput`, {
-            name: `${negName} Dpad tap`,
+            name: `Dpad ${negName} tap`,
             active: true,
         }),
         posPushed: false,

@@ -16,6 +16,11 @@
       "label": "Wheel keycode list. Re-activate plugin to update",
       "type": "text",
       "fallback": "~37(left)[~40(down)]/~39(right)[~38(up)]"
+    },
+    "XinputEnable": {
+      "label": "Enable Xinput controller",
+      "type": "toggle",
+      "fallback": false
     }
   }
 }

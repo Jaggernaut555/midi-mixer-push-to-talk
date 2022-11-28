@@ -9,7 +9,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install --global windows-build-tools
       - run: npm ci
       - run: npm run build
       - run: npx semantic-release

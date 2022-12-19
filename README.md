@@ -45,5 +45,6 @@ This package uses:
 - [ref-array-napi](https://github.com/Janealter/ref-array-napi#readme)
 - [keycode](https://github.com/timoxley/keycode)
 - [node-ViGEmClient](https://github.com/jangxx/node-ViGEmClient)
+- [keysender](https://github.com/Krombik/keysender)
 
 [wheels-demo]: https://raw.githubusercontent.com/Jaggernaut555/midi-mixer-push-to-talk/main/images/wheels-demo.gif

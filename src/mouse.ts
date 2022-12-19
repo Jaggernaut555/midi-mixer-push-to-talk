@@ -59,11 +59,10 @@ function initMouseMovement(relative: boolean = false) {
         let val = 20;
 
         if (relative) {
-            let t = 0.5 - level;
+            let t = level - 0.5;
             // *2 for 0-1 values, 10 for scaling
             t = t * 2 * 10;
-            // change to - for correct directional movement
-            val = t * -val;
+            val = t * val;
         }
         else {
             if (level < 0.5) {
@@ -128,7 +127,36 @@ function initMouseMovement(relative: boolean = false) {
     })
 }
 
+function initMouseWheel() {
+    let mouseWheelAssignment = new Assignment(`MouseWheelControl`, {
+        name: `Mouse Wheel Control`,
+        volume: 0.5,
+        assigned: false,
+    });
+
+    mouseWheelAssignment.on("volumeChanged", (level: number) => {
+        let val = level - 0.5;
+        // I just messed with this scaling until it felt okay
+        val = val * 2000;
+
+        if (mouseWheelAssignment.muted) {
+            val = val / Math.abs(val);
+        }
+
+        handle.mouse.scrollWheel(val)
+    })
+
+    mouseWheelAssignment.on("assignPressed", () => {
+        handle.mouse.click('middle');
+    })
+
+    mouseWheelAssignment.on("mutePressed", () => {
+        mouseWheelAssignment.muted = !mouseWheelAssignment.muted
+    })
+}
+
 export function initMouse(relative: boolean = false) {
     initMouseButtons();
     initMouseMovement(relative);
+    initMouseWheel();
 }

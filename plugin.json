@@ -21,6 +21,16 @@
       "label": "Enable Xinput controller",
       "type": "toggle",
       "fallback": false
+    },
+    "mouseInputEnable": {
+      "label": "Enable mouse control",
+      "type": "toggle",
+      "fallback": false
+    },
+    "mouseInputRelative": {
+      "label": "Mouse Movement based on turn speed",
+      "type": "toggle",
+      "fallback": false
     }
   }
 }

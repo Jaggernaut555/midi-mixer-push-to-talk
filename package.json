@@ -37,6 +37,7 @@
   "dependencies": {
     "ffi-napi": "^4.0.3",
     "keycode": "^2.2.1",
+    "keysender": "^2.2.0",
     "midi-mixer-plugin": "^1.0.2",
     "ref-array-napi": "^1.2.2",
     "vigemclient": "^1.4.1"
@@ -46,7 +47,8 @@
     "ffi-napi",
     "ref-array-napi",
     "keycode",
-    "vigemclient"
+    "vigemclient",
+    "keysender"
   ],
   "repository": {
     "type": "git",

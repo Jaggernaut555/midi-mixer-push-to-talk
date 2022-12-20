@@ -3,7 +3,7 @@
   "id": "ca.jaggernaut.midi-mixer.PTT",
   "name": "Push-To-Talk",
   "type": "node",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Jaggernaut",
   "main": "lib/index.js",
   "settings": {
